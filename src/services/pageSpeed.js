@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAPLRMKSp9fS48a0i-ZTcKaczox0PEEa-w";
+const API_KEY = import.meta.env.VITE_PAGESPEED_API_KEY;
 
 export const analyzeUrl = async (url) => {
   const endpoint = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=${encodeURIComponent(
